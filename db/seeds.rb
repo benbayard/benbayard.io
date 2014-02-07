@@ -7,3 +7,5 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 charlotte_russe = Project.new(name:"Charlotte Russe", site_url:"m.charlotterusse.com", image_url:"http://i.imgur.com/fBNpOOI.png")
+charlote_russe.description = "At Moovweb I led the development of the mobile site for Charlotte Russe. This site was particularly challenging not just because of the high volume of traffic, but also because of the social components they have included throughout the site. Probably the site I am most proud of as a developer."
+charlotte_russe.save
