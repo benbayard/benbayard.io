@@ -27,13 +27,19 @@
   }
 }
 
+
+.projects {
+  text-align: center;
+}
+
 .project {
   @extend %panel;
-  float: left;
+  display: inline-block;
   margin-bottom: 20px;
   padding:0px;
   height: 532.5px;
   width: 300px;
+  text-align: left;
   > .image {
     height: 532.5px;
     width: 300px;

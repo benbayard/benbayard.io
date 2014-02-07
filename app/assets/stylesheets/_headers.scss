@@ -26,9 +26,13 @@
   font-size:      1.25em;
   margin-bottom:  1em;
   text-transform: underline;
+  font-weight: bold;
 }
 
 .project-header {
   @extend %panel-header;
   margin-top: 1em;
+  &.center {
+    text-align: center;
+  }
 }
