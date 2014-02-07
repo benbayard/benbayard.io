@@ -57,8 +57,18 @@
   height: 532.5px;
   width: 300px;
   text-align: left;
+  overflow:hidden;
   .blur-me {
-    @include prefixer(filter, blur(2px), webkit moz o ms spec);
+    @include prefixer(filter, blur(4px), webkit moz o ms spec);
+
+  }
+  .darken {
+    background-color: rgba($charcoal, .75);
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+
   }
   .image {
     height: 532.5px;
@@ -69,18 +79,22 @@
   > .description {
     bottom: 0px;
     position: absolute;
-    background: rgba(white, .65);
+    z-index: 2;
+    // background: rgba(white, .65);
     width: 100%;
     display: block;
     padding: 10px;
     left: 0px;
+    height: 55%;
+    color: #4ECDC4;
+    text-shadow: 1px 1px 1px rgba(white, .45);
     h4, p {
       margin-bottom: .5em;
     }
     a {
       font-size: 1.25em;
       // -webkit-text-stroke: 1px $charcoal;
-      color: $charcoal;
+      color: #4ECDC4;
     }
     // text-shadow:
     //   -1px -1px 0 #000,  
