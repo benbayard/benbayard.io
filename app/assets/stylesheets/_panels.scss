@@ -27,6 +27,23 @@
   }
 }
 
+.contact {
+  @extend %panel;
+  * {
+    vertical-align: middle;
+  }
+  i {
+    width: 20px;
+  }
+  a {
+    color: $charcoal;
+    text-decoration: none;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
 
 .projects {
   text-align: center;
