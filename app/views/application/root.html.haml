@@ -5,6 +5,12 @@
       .beautiful-face
         = image_tag "myface.png"
       .my-description I don't half-ass. That goes for everything in my life: my ideals, my work, and my relationships. I bring my entire ass to each part of my life.
-
-
-
+  %section.projects
+    %h2.project-header Ben's Projects
+    - @projects.each do |project|
+      .row.project
+        .image{style:"background: url(#{project.image_url}) no-repeat; background-size: 300px 532.5px;"}
+        .description 
+          %h4
+            =link_to(project.name, project.site_url)
+          %p= project.description

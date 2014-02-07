@@ -1,6 +1,6 @@
 .container {
   @include outer-container;
-  padding: 10px;
+  // padding: 10px;
 }
 
 .row {
@@ -9,12 +9,16 @@
 
 .full {
   @include span-columns(10);
+  padding: 10px;
 }
 
 %one-mobile-fifth {
   @include media($mobile) {
     @include span-columns(1 of 5);
   }
+}
+%one-fifth {
+  @include span-columns(1 of 5);  
 }
 
 %four-mobile-fifths {

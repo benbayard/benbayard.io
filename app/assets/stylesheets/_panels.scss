@@ -14,18 +14,55 @@
 .about {
   @extend %panel;
   h2 {
-    @extend %header;
-    font-size:      1.25em;
-    margin-bottom:  1em;
-    text-transform: underline;
+    @extend %panel-header;
   }
   .beautiful-face {
-    @extend %one-mobile-fifth;
+    @extend %one-fifth;
     img {
       border-radius: 100%;
     }
   }
-  .my-description {
+  .description {
     @extend %four-mobile-fifths;
+  }
+}
+
+.project {
+  @extend %panel;
+  float: left;
+  margin-bottom: 20px;
+  padding:0px;
+  > .image {
+    height: 532.5px;
+    width: 300px;
+    @include prefixer(filter, blur(2px), webkit moz o ms spec)
+  }
+  > .description {
+    bottom: 0px;
+    position: absolute;
+    background: rgba(white, .65);
+    width: 100%;
+    display: block;
+    padding: 10px;
+    left: 0px;
+    h4, p {
+      margin-bottom: .5em;
+    }
+    a {
+      font-size: 1.25em;
+      // -webkit-text-stroke: 1px $charcoal;
+      color: $charcoal;
+    }
+    // text-shadow:
+    //   -1px -1px 0 #000,  
+    //    1px -1px 0 #000,
+    //    -1px 1px 0 #000,
+    //     1px 1px 0 #000;
+  }
+  h2 {
+    @extend %panel-header;
+    a {
+      text-decoration: none;
+    }
   }
 }

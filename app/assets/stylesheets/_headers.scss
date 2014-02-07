@@ -14,6 +14,21 @@
   font-size: 5em; 
 }
 .sub-header {
-  @extend %top-header;
-  font-size: 2em;
+  span {
+    @extend %top-header;
+    font-size: 2em;
+    display: inline-block;
+  }
+}
+
+%panel-header {
+  @extend %header;
+  font-size:      1.25em;
+  margin-bottom:  1em;
+  text-transform: underline;
+}
+
+.project-header {
+  @extend %panel-header;
+  margin-top: 1em;
 }
