@@ -86,15 +86,16 @@
     padding: 10px;
     left: 0px;
     height: 55%;
-    color: #4ECDC4;
-    text-shadow: 1px 1px 1px rgba(white, .45);
+    color: white;
+    // text-shadow: 1px 1px 1px rgba(white, .45);
     h4, p {
       margin-bottom: .5em;
     }
     a {
       font-size: 1.25em;
+      color: white;
       // -webkit-text-stroke: 1px $charcoal;
-      color: #4ECDC4;
+      // color: #4ECDC4;
     }
     // text-shadow:
     //   -1px -1px 0 #000,  
