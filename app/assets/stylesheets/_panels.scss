@@ -1,0 +1,31 @@
+%panel {
+  background:    white;
+  border-radius: 3px;
+  box-shadow:    0 2px 2px -2px rgba($charcoal, .3);
+  overflow:      auto;
+  padding:       1em;
+  &:after {
+    clear:   both;
+    content: "";
+    display: table;
+  }
+}
+
+.about {
+  @extend %panel;
+  h2 {
+    @extend %header;
+    font-size:      1.25em;
+    margin-bottom:  1em;
+    text-transform: underline;
+  }
+  .beautiful-face {
+    @extend %one-mobile-fifth;
+    img {
+      border-radius: 100%;
+    }
+  }
+  .my-description {
+    @extend %four-mobile-fifths;
+  }
+}

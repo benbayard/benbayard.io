@@ -1,0 +1,24 @@
+.container {
+  @include outer-container;
+  padding: 10px;
+}
+
+.row {
+  position: relative;
+}
+
+.full {
+  @include span-columns(10);
+}
+
+%one-mobile-fifth {
+  @include media($mobile) {
+    @include span-columns(1 of 5);
+  }
+}
+
+%four-mobile-fifths {
+  @include media($mobile) {
+    @include span-columns(4 of 5);
+  }
+}

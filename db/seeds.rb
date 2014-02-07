@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+charlotte_russe = Project.new(name:"Charlotte Russe", site_url:"m.charlotterusse.com", image_url:"http://i.imgur.com/fBNpOOI.png")

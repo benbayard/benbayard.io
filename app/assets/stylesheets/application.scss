@@ -10,6 +10,48 @@
  *
  *= require_self
  */
-
+@import "reset";
+@import "variables";
 @import "bourbon";
 @import "grid-settings";
+@import "neat";
+@import "headers";
+@import "grid";
+@import "panels";
+
+body {
+  font-size: 15px;
+  background: $creme;
+
+}
+
+header {
+  // min-height: 300px;
+  text-align: center;
+  background: $charcoal;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: block;
+}
+
+main {
+  // height: 300px;
+  display: block;
+  position: relative;
+  z-index: 10;
+  font-family: sans-serif;
+  color: $charcoal;
+  // position: relative;
+}
+
+img {
+  max-width: 100%;
+}
+
+invisible {
+  // this is an invisible element that I made!
+  display: block;
+  opacity: 0;
+  width: 100%;
+}

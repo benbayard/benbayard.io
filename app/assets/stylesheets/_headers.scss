@@ -1,0 +1,19 @@
+%header {
+  font-family: 'Raleway', sans-serif;  
+}
+%top-header {
+  @extend %header;
+  background: -webkit-linear-gradient($cherry-pink, $dark-pink);
+  color: $dark-pink;
+  padding: .5em 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.main-header {
+  @extend %top-header;
+  font-size: 5em; 
+}
+.sub-header {
+  @extend %top-header;
+  font-size: 2em;
+}
