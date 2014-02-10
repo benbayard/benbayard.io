@@ -69,6 +69,9 @@
   overflow: hidden;
   position: relative;
   $transition: all .35s ease;
+  .potato {
+    outline: 1px solid transparent;
+  }
   &.un { 
     .blur-me {
       @include prefixer(filter, initial, webkit moz o ms spec);
@@ -84,6 +87,9 @@
       color: $charcoal;
       border-color: $charcoal;
       background: rgba(white, .75);
+    }
+    .image {
+      top: 0.01;
     }
   }
   .blur-me {
@@ -101,8 +107,8 @@
   .image {
     height: 532.5px;
     width: 300px;
-    background-position: 0 0;
-    background-size: 100%;
+    position: relative;
+    top: 0px;
   }
   .icon-eye {
     padding: 5px;
