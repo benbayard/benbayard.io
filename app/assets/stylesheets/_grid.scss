@@ -26,3 +26,25 @@
     @include span-columns(4 of 5);
   }
 }
+
+%two-tablet-fifths {
+  @include span-columns(2 of 5);  
+  // @include media($tablet) {
+  //   @include span-columns(1 of 5);
+  // }
+  @include media($mobile) {
+    @include span-columns(1 of 1);
+  }
+}
+
+%three-tablet-fifths {
+  @include span-columns(3 of 5);
+
+  // @include media($tablet) {
+  //   @include span-columns(4 of 5);
+  // }
+  @include media($mobile) {
+    @include span-columns(1 of 1);
+  }
+
+}

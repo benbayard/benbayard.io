@@ -1,30 +1,34 @@
 .full
-  %h2.project-header.center About Ben.
-  %section.about 
-    .row
-      .beautiful-face
-        = image_tag "myface.png"
-      .my-description I don't half-ass. That goes for everything in my life: my ideals, my work, and my relationships. I bring my entire ass to each part of my life.
-  %h2.project-header.center Contact Ben.
-  %section.contact
-    .row
-      .twitter
-        %a{href:"http://twitter.com/partyfists"}
-          %i.icon-twitter
-          %span @partyfists
-      .email
-        %a{href:"mailto:bjbayard@gmail.com"} 
-          %i.icon-envelope
-          %span bjbayard@gmail.com
+  .about-container
+    %h2.project-header.center About Ben.
+    %section.about 
+      .row
+        .beautiful-face
+          = image_tag "myface.png"
+        .my-description I don't half-ass. That goes for everything in my life: my ideals, my work, and my relationships. I bring my entire ass to each part of my life.
+  .contact-container
+    %h2.project-header.center Contact Ben.
+    %section.contact
+      .row
+        .twitter
+          %a{href:"http://twitter.com/partyfists"}
+            %i.icon-twitter
+            %span @partyfists
+        .email
+          %a{href:"mailto:bjbayard@gmail.com"} 
+            %i.icon-envelope
+            %span bjbayard@gmail.com
 
-      .phone
-        %a{href:"tel:9257599867"} 
-          %i.icon-mobile
-          %span 9257599867
+        .phone
+          %a{href:"tel:9257599867"} 
+            %i.icon-mobile
+            %span 9257599867
+.full
   %section.projects
     %h2.project-header Ben's Projects
     - @projects.each do |project|
       .row.project
+        %i.icon-eye
         .blur-me
           .darken
           %img{src: project.image_url}
