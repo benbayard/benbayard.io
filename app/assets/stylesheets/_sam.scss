@@ -4,7 +4,7 @@
 @import "bourbon";
 
 
-main {
+main.sam {
   display: block;
   width: 100%;
   position: relative;
@@ -12,9 +12,11 @@ main {
   font-family: 'Josefin Slab', serif;
   font-size: 64px;
   // padding: 10px;
+  background: white;
 }
 
-body {
+body.sam {
+  background: white;
   line-height: 100px;
   // -webkit-font-smoothing: antialiased;
   //  -apple-font-smoothing: antialiased;
