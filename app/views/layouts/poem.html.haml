@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title Sam Elizabeth Is Pretty Awesome
+    %meta{content: "width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0", name: "viewport"}/
+    %link{href:'http://fonts.googleapis.com/css?family=Josefin+Slab:100,700,100italic,700italic', rel:'stylesheet', type:'text/css'}
+    = stylesheet_link_tag    "sam", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %main
+      .container
+        = yield

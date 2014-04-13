@@ -1,0 +1,133 @@
+@import "reset";
+@import "style";
+@import "variables";
+@import "bourbon";
+
+
+main {
+  display: block;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-family: 'Josefin Slab', serif;
+  font-size: 64px;
+  // padding: 10px;
+}
+
+body {
+  line-height: 100px;
+  // -webkit-font-smoothing: antialiased;
+  //  -apple-font-smoothing: antialiased;
+  @include prefixer("font-smoothing", antialiased, webkit moz spec ms o);
+  @include prefixer("text-rendering", optimizeLegibility, webkit moz spec ms o)
+}
+
+.ocean {
+  // 081026
+  background: -webkit-linear-gradient(#081026, #1E6466);
+  color: #1E6466;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-style: italic;
+  font-weight: bold;
+}
+%quote {
+  display: inline-block;
+
+}
+.open-quote {
+  @extend %quote;
+  width: 5%;
+  vertical-align: top;
+  font-size: 100px;
+  line-height: 1;
+
+}
+.close-quote {
+  @extend %quote;
+  width: 5%;
+  font-size: 100px;
+  line-height: 1;
+}
+.content {
+  @extend %quote;
+  width: 80%;
+
+}
+.break-and-batter {
+  display: inline-block;
+}
+.break {
+  display: inline-block;
+  @include transform(rotate(-35deg))
+}
+.batter {
+  display: inline-block;
+  @include transform(rotate(35deg))
+
+}
+@include keyframes(pulse) {
+    0% { font-size: 1em; }
+    50% { font-size: .9em;  }
+    100% {  font-size: 1em;  }
+}
+.pulse {
+  display: inline-block;
+  -webkit-animation: pulse 4s infinite ease-in-out;
+}
+.mountains {
+  text: {
+    transform: uppercase;
+  }
+  font: {
+    weight: bold;
+  }
+}
+
+.barren {
+  color: #E7BF9B;
+  letter-spacing: wide;
+  font: {
+    weight: bold;
+  }
+  -webkit-text-stroke-width: 1px;
+  -moz-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #4F2908;
+  -moz-text-stroke-color: #4F2908;
+}
+.cr {
+  display: inline-block;
+  margin-right: 3px;
+}
+
+.hot {
+  color: #E20001;
+}
+.insignificant {
+  display: block;
+  text:{
+    transform: lowercase; 
+    align:     center;
+  }
+  font: {
+    size: .8em;
+  }
+}
+
+.parted {
+  letter-spacing: 100px;
+  display: block;
+  text-align:center;
+}
+
+.dark {
+  font-weight: bold;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+.all-at-once {
+  display: block;
+  text-align: center;
+}

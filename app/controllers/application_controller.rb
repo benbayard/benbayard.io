@@ -6,4 +6,8 @@ class ApplicationController < ActionController::Base
   def root 
     @projects = Project.all
   end
+
+  def sam
+    render :layout => 'poem'
+  end
 end
